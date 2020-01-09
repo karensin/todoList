@@ -8,9 +8,9 @@ export default function Task ({ todo, toggleTodo}) {
     }
     return (
       <div className="task">
-        <label> 
+        <label className= "label"> 
             
-         <input type= "checkbox" checked={todo.complete} onChange={handleTodoClick} /> 
+         <input className="check" type= "checkbox" checked={todo.complete} onChange={handleTodoClick} /> 
              {todo.name}
           </label>
       </div>

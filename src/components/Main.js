@@ -52,9 +52,11 @@ function Main () {
     setTodos(newTodos)
   }
   return (
-          <div className= "container">  
+          <div className= "container todolist" >  
              <h1> Todo List </h1>
-            <TaskList todos={todos} toggleTodo={toggleTodo}/>   
+             
+            <TaskList todos={todos} toggleTodo={toggleTodo}/>  
+
             <input ref={todoNameRef} type = "text"></input>
             <button onClick={handleAddTodo} id= "add">Add Todo </button> 
             <button type="button" class="btn btn-danger" onClick= {handleClearTodos}id= "delete">  Delete Todo </button>

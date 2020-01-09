@@ -1,6 +1,16 @@
 .task{
     background-color: white;
-    border: 1px solid black;
-    padding-top: 100px;
+    border: 10px solid rgb(143, 69, 69) ;
+    margin-bottom: 5px;
+     
  }
  
+ .label{
+    
+     font-size: 50px;
+      height: 150px;
+ }
+ input[type=checkbox] {
+     width:80px; height:80px;
+    
+    }

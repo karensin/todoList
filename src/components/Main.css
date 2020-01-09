@@ -14,7 +14,9 @@ body{
 html {
     height: 100%;
   }
-  
-.todolist{
+
+.list{
+    max-height: 40vh;
+    overflow: scroll;
 
 }
