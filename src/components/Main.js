@@ -52,14 +52,13 @@ function Main () {
     setTodos(newTodos)
   }
   return (
-          <div>  
+          <div className= "container">  
              <h1> Todo List </h1>
             <TaskList todos={todos} toggleTodo={toggleTodo}/>   
             <input ref={todoNameRef} type = "text"></input>
             <button onClick={handleAddTodo} id= "add">Add Todo </button> 
             <button type="button" class="btn btn-danger" onClick= {handleClearTodos}id= "delete">  Delete Todo </button>
             <div id="left"> {todos.filter(todo=>!todo.complete).length} left to do </div>
-         
           </div>
         );
     
