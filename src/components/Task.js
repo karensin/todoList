@@ -11,7 +11,7 @@ export default function Task ({ todo, toggleTodo}) {
         <label className= "label"> 
             
          <input className="check" type= "checkbox" checked={todo.complete} onChange={handleTodoClick} /> 
-             {todo.name}
+           {todo.name}  
           </label>
       </div>
     )

@@ -19,10 +19,12 @@ html {
 .list{
     max-height: 40vh;
     overflow: scroll;
-
+    margin-bottom: 50px;
 }
 
 .decor{
     font-size: 150px;
     text-align: center;
 }
+
+ 

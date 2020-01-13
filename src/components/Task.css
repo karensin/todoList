@@ -1,17 +1,31 @@
 .task{
     background-color: white;
-    border: 10px solid rgb(143, 69, 69) ;
+    border: 10px solid rgb(185, 143, 143) ;
     margin-bottom: 5px;
-     
- }
+    border-radius: 80px;
+    min-height: 200px;
+    margin-bottom: 15px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-top: 50px;
+    
+}
  
  .label{
     width: 100%;
-     font-size: 50px;
-      height: 100px;
-      padding-bottom: 20%;
-
+    font-size: 50px;
+    max-height: 350px; 
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    color: #702836;
+    letter-spacing: 2px; 
+   
+  
  }
+  
+ 
  input[type=checkbox] {
      width:80px; height:80px;
      float: right;
@@ -27,6 +41,8 @@
         padding:8px;
         box-sizing:border-box;
         transition:.3s;
+        font-size: 40pt;
+        padding-left: 50px;
       }
 
     input[type=text]:focus{
@@ -58,6 +74,7 @@
    height: 150px;
    width: 300px;
    float: right;
+   margin-top: 15px;
  }
 
  button#delete.btn.btn-danger{
@@ -65,4 +82,8 @@
     height: 150px;
     width: 300px;
     float: left;
+    margin-top: 15px;
+  
  }
+
+ 
