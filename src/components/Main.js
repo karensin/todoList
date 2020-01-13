@@ -29,6 +29,7 @@ function Main () {
   function handleAddTodo (e){
    const name= todoNameRef.current.value;
    if(name === "") return 
+   
    setTodos(prevTodos => {
       return [...prevTodos,{id: uuidv4(), name: name , complete: false }]
    })
@@ -53,14 +54,16 @@ function Main () {
   }
   return (
           <div className= "container todolist" >  
-             <h1> Todo List </h1>
-             
+             <h1 className= "title">✓ 𝕄𝕪 𝕋𝕒𝕤𝕜𝕤 </h1>
+             <div className="decor"> ◌◌◌✐✎✐✎◌◌◌</div>
             <TaskList todos={todos} toggleTodo={toggleTodo}/>  
 
-            <input ref={todoNameRef} type = "text"></input>
-            <button onClick={handleAddTodo} id= "add">Add Todo </button> 
+            <input ref={todoNameRef} type = "text" placeholder="I want to..."></input>
+            <div className= "button"> 
+            <button type="button" onClick={handleAddTodo}  class="btn btn-primary " id= "add">Add Todo </button> 
+            </div>
             <button type="button" class="btn btn-danger" onClick= {handleClearTodos}id= "delete">  Delete Todo </button>
-            <div id="left"> {todos.filter(todo=>!todo.complete).length} left to do </div>
+            <div className="fixed-bottom"> {todos.filter(todo=>!todo.complete).length} left to do </div>
           </div>
         );
     

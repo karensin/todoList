@@ -6,11 +6,64 @@
  }
  
  .label{
-    
+    width: 100%;
      font-size: 50px;
-      height: 150px;
+      height: 100px;
+      padding-bottom: 20%;
+
  }
  input[type=checkbox] {
      width:80px; height:80px;
+     float: right;
+   
     
     }
+    input[type=text]{
+        width:100%;
+        border:2px solid #aaa;
+        border-radius:4px;
+        margin:8px 0;
+        outline:none;
+        padding:8px;
+        box-sizing:border-box;
+        transition:.3s;
+      }
+
+    input[type=text]:focus{
+        border-color:dodgerBlue;
+        box-shadow:0 0 8px 0 dodgerBlue;
+      }
+
+ .title{
+     font-size: 150px;
+     font-family: "Gill Sans", sans-serif;
+     text-align: center;
+     font-weight: 600 ; 
+     color: #702836;
+ }
+ .left {
+    font-size: 100px;
+    float: right;
+
+ }
+ input{
+  width: 150%; 
+  height:200px;
+  font-size:14pt;
+  margin-top: 100px;
+  border-radius: 2px solid yellow;
+ }
+ 
+ button#add.btn.btn-primary{
+   height: 200px;
+   width: 300px;
+    
+   float: right;
+ }
+
+ button#delete.btn.btn-danger{
+    color: black;
+    height: 200px;
+    width: 300px;
+    float: left;
+ }

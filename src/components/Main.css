@@ -9,6 +9,7 @@ body{
     background-size:contain ;
     background-color: #E4C4C5;
     background-position: left bottom;
+
 }
  
 html {
@@ -19,4 +20,9 @@ html {
     max-height: 40vh;
     overflow: scroll;
 
+}
+
+.decor{
+    font-size: 150px;
+    text-align: center;
 }
