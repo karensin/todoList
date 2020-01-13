@@ -55,15 +55,14 @@
  }
  
  button#add.btn.btn-primary{
-   height: 200px;
+   height: 150px;
    width: 300px;
-    
    float: right;
  }
 
  button#delete.btn.btn-danger{
     color: black;
-    height: 200px;
+    height: 150px;
     width: 300px;
     float: left;
  }

@@ -60,9 +60,9 @@ function Main () {
 
             <input ref={todoNameRef} type = "text" placeholder="I want to..."></input>
             <div className= "button"> 
-            <button type="button" onClick={handleAddTodo}  class="btn btn-primary " id= "add">Add Todo </button> 
+            <button type="button" onClick={handleAddTodo}  class="btn btn-primary " id= "add">Add </button> 
             </div>
-            <button type="button" class="btn btn-danger" onClick= {handleClearTodos}id= "delete">  Delete Todo </button>
+            <button type="button" class="btn btn-danger" onClick= {handleClearTodos}id= "delete">  Delete </button>
             <div className="fixed-bottom"> {todos.filter(todo=>!todo.complete).length} left to do </div>
           </div>
         );
