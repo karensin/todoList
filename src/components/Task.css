@@ -70,20 +70,25 @@
   border-radius: 2px solid yellow;
  }
  
+ button.btn{
+    height: 150px;
+    width: 300px;
+    font-size: 38pt  ;
+    margin-top: 15px;
+ }
  button#add.btn.btn-primary{
-   height: 150px;
-   width: 300px;
    float: right;
-   margin-top: 15px;
+   
+   background-color: #72a9dd;
+   border-radius: 50px 150px;
+   
  }
 
  button#delete.btn.btn-danger{
-    color: black;
-    height: 150px;
-    width: 300px;
+    color: white;
     float: left;
-    margin-top: 15px;
-  
+    border-radius: 150px 50px;
+    
  }
 
  
