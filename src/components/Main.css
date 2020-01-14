@@ -27,4 +27,9 @@ html {
     text-align: center;
 }
 
- 
+ .lefttodos{
+    text-align: center;
+    font-size: 45pt;
+    color: #702836;
+    font-weight: 0;
+ }
