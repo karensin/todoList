@@ -35,6 +35,7 @@ html {
 .decor{
     font-size: 50px;
     text-align: center;
+    margin-left: 50px ;
 }
 
  .lefttodos{
@@ -42,6 +43,7 @@ html {
     font-size: 15pt;
     color: #702836;
     font-weight: 0;
+    margin-left: 50px;
  }
  .task{
     background-color: white;
@@ -109,6 +111,8 @@ html {
      text-align: center;
      font-weight: 100 ; 
      color: #702836;
+     margin-left: auto;
+     padding-left: 40px;
  }
  .left {
     font-size: 100px;
@@ -134,7 +138,7 @@ html {
     margin-left: 30%;
     color: white;
     border-radius: 75px 25px;
-    
+    float: left;
  }
  
 
@@ -143,6 +147,7 @@ html {
    background-color: #72a9dd;
    border-radius: 25px 75px;
    margin-right: 34%;
+    float: right;
    
  }
 
