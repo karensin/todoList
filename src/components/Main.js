@@ -70,15 +70,14 @@ function Main() {
       <h1 className="title">✓ 𝕄𝕪 𝕋𝕒𝕤𝕜𝕤 </h1>
       <div className="decor"> ◌◌◌✐✎✐✎◌◌◌</div>
       <div className="lefttodos"> {todos.filter(todo => !todo.complete).length} left to do </div>
+      <div className= "list2"> 
       <TaskList todos={todos} toggleTodo={toggleTodo} />
-
       <input ref={todoNameRef} type="text" onKeyPress={handleAddTodoOnEnter} placeholder="I want to..."></input>
-      <div className="button">
+       <div className= 'button'> 
         <button type="button" onClick={handleAddTodoOnClick} class="btn btn-primary " id="add">Add </button>
-
+        <button type="button" class="btn btn-danger" onClick={handleClearTodos} id="delete">  Delete </button>
+        </div>
       </div>
-      <button type="button" class="btn btn-danger" onClick={handleClearTodos} id="delete">  Delete </button>
-
     </div>
   );
 
@@ -86,3 +85,6 @@ function Main() {
 
 
 export default Main;
+
+
+ 

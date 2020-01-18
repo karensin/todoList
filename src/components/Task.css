@@ -14,7 +14,7 @@
  
  .label{
     width: 100%;
-    font-size: 50px;
+    font-size: 20px;
     max-height: 350px; 
     box-sizing: border-box;
     overflow-wrap: break-word;
@@ -52,7 +52,7 @@
       }
 
  .title{
-     font-size: 150px;
+     font-size: 35px;
      font-family: "Gill Sans", sans-serif;
      text-align: center;
      font-weight: 600 ; 

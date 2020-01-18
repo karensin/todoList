@@ -5,31 +5,149 @@ body{
     background-repeat: no-repeat;
     background-size: 100% ;
     overflow: scroll;
-    position: fixed; 
     background-size:contain ;
     background-color: #E4C4C5;
     background-position: left bottom;
+    width: 1000px;     
+    max-height:1000px;    
 
 }
  
+html,body{
+    overflow-y: scroll; 
+    
+}
 html {
     height: 100%;
+     overflow: scroll;
+    
+
   }
 
 .list{
-    max-height: 40vh;
+    max-height: 300px;
     overflow: scroll;
-    margin-bottom: 50px;
+    margin-bottom: 2px;
+    margin-left: 30%;;
+  
 }
 
 .decor{
-    font-size: 150px;
+    font-size: 50px;
     text-align: center;
 }
 
  .lefttodos{
     text-align: center;
-    font-size: 45pt;
+    font-size: 15pt;
     color: #702836;
     font-weight: 0;
  }
+ .task{
+    background-color: white;
+    border: 5px solid rgb(185, 143, 143) ;
+    margin-bottom: 5px;
+    border-radius: 80px;
+    min-height: 20px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 7px;
+    padding-top: 10px;
+    max-width: 300px;
+   
+}
+ 
+ .label{
+    width: 100%;
+    font-size: 12pt;
+    max-height: 30px; 
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    color: #702836;
+    letter-spacing: 2px; 
+   
+  
+ }
+  
+ 
+ input[type=checkbox] {
+     width:18px; height:18px;
+    
+    
+    }
+    input[type=text]{
+        width:100%;
+        border:2px solid #aaa;
+        border-radius: 30px;
+        outline:none;
+        padding:5px;
+        box-sizing:border-box;
+        transition:.3s;
+        font-size: 18pt;
+        padding-left: 20px;
+        font-size: 16pt;
+        margin-left: 30%;
+        max-height: 45px;
+        max-width:300px;
+      }
+
+    input[type=text]:focus{
+        border-color:dodgerBlue;
+        box-shadow:0 0 8px 0 dodgerBlue;
+      }
+      
+      input{
+        max-width: 250px;
+        max-height: 30px;
+        
+      }
+ .title{
+     font-size: 35px;
+     font-family: "Gill Sans", sans-serif;
+     text-align: center;
+     font-weight: 100 ; 
+     color: #702836;
+ }
+ .left {
+    font-size: 100px;
+    float: right;
+
+ }
+ input{
+  width: 150%; 
+  height:200px;
+  font-size: 18pt;
+  margin-top: 5px;
+  border-radius: 1px solid yellow;
+ }
+ 
+ button.btn{
+    height: 50px;
+    width: 80px;
+    font-size: 12pt  ;
+ 
+ }
+ button#delete.btn.btn-danger{
+    
+    margin-left: 30%;
+    color: white;
+    border-radius: 75px 25px;
+    
+ }
+ 
+
+ button#add.btn.btn-primary{
+ 
+   background-color: #72a9dd;
+   border-radius: 25px 75px;
+   margin-right: 34%;
+   
+ }
+
+
+ .list2{
+     margin-left: 10%;
+ }
+ 
