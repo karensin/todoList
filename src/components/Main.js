@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import TaskList from './TaskList.js';
 import uuidv4 from 'uuid/v4';
 import './Main.css';
-
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
 function Main() {
@@ -69,13 +68,14 @@ function Main() {
     <div className="container todolist" >
       <h1 className="title">✓ 𝕄𝕪 𝕋𝕒𝕤𝕜𝕤 </h1>
       <div className="decor"> ◌◌◌✐✎✐✎◌◌◌</div>
+
       <div className="lefttodos"> {todos.filter(todo => !todo.complete).length} left to do </div>
-      <div className= "list2"> 
-      <TaskList todos={todos} toggleTodo={toggleTodo} />
-      <input ref={todoNameRef} type="text" onKeyPress={handleAddTodoOnEnter} placeholder="I want to..."></input>
-       <div className= 'button'> 
-        <button type="button" onClick={handleAddTodoOnClick} class="btn btn-primary " id="add">Add </button>
-        <button type="button" class="btn btn-danger" onClick={handleClearTodos} id="delete">  Delete </button>
+      <div className="list2">
+        <TaskList todos={todos} toggleTodo={toggleTodo} />
+        <input ref={todoNameRef} type="text" onKeyPress={handleAddTodoOnEnter} placeholder="I want to..."></input>
+        <div className='button'>
+          <button type="button" onClick={handleAddTodoOnClick} class="btn btn-primary " id="add">Add </button>
+          <button type="button" class="btn btn-danger" onClick={handleClearTodos} id="delete">  Delete </button>
         </div>
       </div>
     </div>
@@ -85,6 +85,3 @@ function Main() {
 
 
 export default Main;
-
-
- 
